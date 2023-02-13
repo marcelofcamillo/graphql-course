@@ -11,3 +11,17 @@ query GET_USERS {
     username
   }
 }
+
+query GET_POST {
+  post {
+    id
+    title
+  }
+}
+
+query GET_POSTS {
+  posts {
+    id
+    title
+  }
+}
