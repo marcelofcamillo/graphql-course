@@ -1,0 +1,49 @@
+query GET_USER($id: ID!, $teste: Boolean) {
+  user(id: $id, teste: $teste) {
+    id
+    firstName
+    lastName
+    userName
+    indexRef
+    createdAt
+  }
+}
+
+# QUERIES VARIABLES
+{
+  "id": "812",
+  "teste": true
+}
+
+query GET_USERS {
+  users {
+    id
+    firstName
+    lastName
+    userName
+    indexRef
+    createdAt
+  }
+}
+
+query GET_POST($postId: ID!) {
+  post342: post(id: "342") {
+    postId: id
+    id
+    title
+  }
+  post860: post(id: "860") {
+    id
+    postTitle: title
+  }
+}
+
+query GET_POSTS {
+  posts {
+    id
+    title
+    body
+    indexRef
+    createdAt
+  }
+}
